@@ -1,0 +1,15 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+	<bean id="addressObj" class="com.springcore.details.Address">
+		<property name="city" value="Guntur" />
+		<property name="state" value="AP" />
+		<property name="country" value="India" />
+	</bean>
+	<bean id="studentObj" class="com.springcore.details.Student">
+		<property name="studentId" value="88" />
+		<property name="studentName" value="PavanMandava" />
+		<property name="address" ref="addressObj" />
+	</bean>
+</beans>
