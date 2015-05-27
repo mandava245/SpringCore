@@ -1,0 +1,15 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+	<bean id="dbPropertiesObj" class="com.springcore.bean.DataBaseProperties">
+		<property name="dbProperties">
+			<props>
+				<prop key="driverClassName">com.mysql.jdbc.Driver</prop>
+				<prop key="dbUrl">jdbc:mysql://localhost:3306/pavan</prop>
+				<prop key="username">root</prop>
+				<prop key="password">199525</prop>
+			</props>
+		</property>
+	</bean>
+</beans>
