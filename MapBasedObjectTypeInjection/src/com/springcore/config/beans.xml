@@ -1,0 +1,41 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+	<beans>
+		<bean id="answer1" class="com.springcore.bean.Answer" >
+			<property name="aid" value="88" />
+			<property name="answer" value="Java is a Programming Language" />
+			<property name="postedDate" value="05/26/2015" />
+		</bean>
+		<bean id="answer2" class="com.springcore.bean.Answer" >
+			<property name="aid" value="84" />
+			<property name="answer" value="Java is a Platform Independent" />
+			<property name="postedDate" value="05/25/2015" />
+		</bean>
+		<bean id="answer3" class="com.springcore.bean.Answer" >
+			<property name="aid" value="88" />
+			<property name="answer" value="Java is an Open Source" />
+			<property name="postedDate" value="05/27/2015" />
+		</bean>
+		<bean id="user1" class="com.springcore.bean.User" >
+			<property name="uid" value="0088" />
+			<property name="name" value="PavanM" />
+			<property name="email" value="mspavan04@gmail.com"></property>
+		</bean>
+		<bean id="user2" class="com.springcore.bean.User" >
+			<property name="uid" value="0084" />
+			<property name="name" value="Chaithanya" />
+			<property name="email" value="chaithanya@gmail.com" />
+		</bean>
+		<bean id="questionObj" class="com.springcore.bean.Question">
+			<property name="qid" value="01" />
+			<property name="question" value="What is Java?" />
+			<property name="answers">
+				<map>
+					<entry key-ref="answer1" value-ref="user1"></entry>
+					<entry key-ref="answer2" value-ref="user2"></entry>
+					<entry key-ref="answer3" value-ref="user1"></entry>
+				</map>
+			</property>
+		</bean>
+	</beans>
