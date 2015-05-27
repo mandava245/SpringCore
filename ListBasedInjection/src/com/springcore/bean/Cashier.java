@@ -15,7 +15,7 @@ public class Cashier {
 		this.fileName = fileName;
 		openStream();
 	}
-	public void openStream(){
+	public void openStream(){//for creating PrintWriter Object
 		try {
 			printWriter = new PrintWriter(filePath+"/"+fileName+".txt");
 		} catch (FileNotFoundException e) {
