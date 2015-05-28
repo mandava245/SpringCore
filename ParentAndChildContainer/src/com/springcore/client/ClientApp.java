@@ -14,7 +14,7 @@ public class ClientApp {
 		BeanFactory parentFactory = new XmlBeanFactory(parentResource);
 		Resource childResource = new ClassPathResource("com/springcore/config/service-bean.xml");
 		BeanFactory childFactory = new XmlBeanFactory(childResource, parentFactory);
-		ServiceBean serviceBean = childFactory.getBean("serviceObj", ServiceBean.class);
+		ServiceBean serviceBean = childFactory.getBean("serviceObj",ServiceBean.class);
 		serviceBean.serviceMethod();
 	}
 

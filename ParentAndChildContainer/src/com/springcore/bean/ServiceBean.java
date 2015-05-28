@@ -10,7 +10,8 @@ public class ServiceBean {
 	public void setDaoBean(DAOBean daoBean) {
 		this.daoBean = daoBean;
 	}
-	public void serviceMethod(){
+
+	public void serviceMethod() {
 		System.out.println("From serviceMethod()");
 		daoBean.daoMethod();
 	}
