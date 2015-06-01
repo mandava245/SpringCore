@@ -1,0 +1,23 @@
+<!-- <beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd"> -->
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+
+	<bean id="dataSource3" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
+		<property name="url" value="jdbc:mysql://localhost:3306/hibernate" />
+		<property name="username" value="hibernate" />
+		<property name="password" value="hibernate" />
+	</bean>
+	
+	<bean id="employeeDAO2" class="com.springcore.dao.EmployeeDAOImpl" autowire="byType" >
+	
+	</bean>
+	
+	<bean id="employeeService" class="com.springcore.service.EmployeeServiceImpl" autowire="byType">
+	
+	</bean>
+
+</beans>
