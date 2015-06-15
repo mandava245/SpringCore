@@ -20,7 +20,7 @@ public class EmployeeDAOImpl implements EmployeeDAO {
 		try {
 			con = dataSource.getConnection();
 			PreparedStatement pStatement = con
-					.prepareStatement("select * from employee where eid=?");
+					.prepareStatement("select * from employees where eid=?");
 			pStatement.setInt(1, empId);
 			ResultSet rSet = pStatement.executeQuery();
 			if (rSet.next()) {

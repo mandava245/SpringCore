@@ -6,10 +6,10 @@
 <beans>
 
 	<bean id="dataSource3" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
-		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
-		<property name="url" value="jdbc:mysql://localhost:3306/hibernate" />
-		<property name="username" value="hibernate" />
-		<property name="password" value="hibernate" />
+		<property name="driverClassName" value="oracle.jdbc.driver.OracleDriver" />
+		<property name="url" value="jdbc:oracle:thin:@localhost:1521:pavan" />
+		<property name="username" value="springcore" />
+		<property name="password" value="springcore" />
 	</bean>
 	
 	<bean id="employeeDAO2" class="com.springcore.dao.EmployeeDAOImpl" autowire="byType" >
