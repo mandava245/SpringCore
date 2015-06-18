@@ -28,7 +28,7 @@ public class Cashier implements InitializingBean,DisposableBean {
 		System.out.println("From setFileName() Method");
 		this.fileName = fileName;
 	}
-	public void openStrem(){
+	public void openStream(){
 		System.out.println("Opening the Stream");
 		try {
 			printWriter = new PrintWriter(filePath+"/"+fileName+".txt");
@@ -61,7 +61,7 @@ public class Cashier implements InitializingBean,DisposableBean {
 	}
 	public void afterPropertiesSet() throws Exception {
 		System.out.println("From afterPropertiesSet() : Executing openStream() Method");
-		openStrem();
+		openStream();
 	}
 	
 }
